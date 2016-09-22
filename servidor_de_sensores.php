@@ -99,7 +99,7 @@ do {
             }
             if ($buf == 'shutdown') {
                 socket_close($client);
-                pg_close($dbconn);
+                
                 break 2;
             }
             $talkback = "Cliente {$key}: Usted dijo '$buf'.\n";
